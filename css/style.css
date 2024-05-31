@@ -736,6 +736,7 @@ hr {
 
 .swiper-slide,
 .gift-card {
+    margin: 0 10px;
     width: 200px !important;
     height: 120px !important;
 }
@@ -803,6 +804,24 @@ hr {
 
 .sec-green span {
     color: #00000094;
+}
+.size-img{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    margin-left: 30px;
+}
+.size-options h4, .include h4{
+    font-size: 1.2em;
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+.include select{
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px;
 }
 
 /* F O R     D E S K  T O P */
@@ -1358,9 +1377,26 @@ hr {
         transform: translateY(-5%);
     }
     .calc-sec-inner{
-        /* display: flex; */
-        justify-content: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 30px 0;
     }
+    .basket-img{
+        width: 30vw;
+    }
+    .calc-end{
+        display: flex;
+        justify-content: space-around;
+    }
+    .include select{
+        width: 20vw;
+        padding: 10px;
+        font-size: 1.1em;
+    }
+    .size h6, .size p{
+        font-size: 1.1em;
+    }
+
 }
 
 /*F O R   T A B L E T*/

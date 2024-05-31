@@ -11,6 +11,7 @@ const catSpan = document.querySelector("#category-span")
 const menuBasket = document.querySelector("#calc-sec")
 const menuLeft = document.querySelector(".menu-left-side")
 const menuMain = document.querySelector("#menu-mainn")
+const calcEnd = document.querySelector(".calc-end")
 let data = []
 
 for (let i = 0; i < acc.length; i++) {
@@ -231,7 +232,43 @@ function openCalcSec(arg){
                                 <p>${more.calories} Calories</p>
                             </div>
                         </div>
+                       
                     `;
+                    calcEnd.innerHTML = `
+                    <div class="size-options">
+                    <h4>Size Options</h4>
+                    <div class="size-img">
+                        <div class="size">
+                            <img src="img/size2svg.svg" />
+                            <h6>short</h6>
+                            <p>8 fl oz</p>
+                        </div>
+                        <div class="size">
+                            <img src="img/size3.svg" />
+                            <h6>Tall</h6>
+                            <p>12 fl oz</p>
+                        </div>
+                        <div class="size">
+                            <img src="img/size4svg.svg" />
+                            <h6>Grande</h6>
+                            <p>16 fl oz</p>
+                        </div>
+                        <div class="size">
+                            <img src="img/size5.svg" />
+                            <h6>Venti</h6>
+                            <p>20 fl oz</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="include">
+                <h4>What's Included</h4>
+                <select name="" id=""><option>Milk Foam</option></select>
+                <select name="" id=""><option>2% Milk</option></select>
+                <select name="" id=""><option>Steamed Hot</option></select>
+                <select name="" id=""><option>Chai pumps</option></select>
+                <select name="" id=""><option>Waters</option></select>
+            </div>
+                    `
                 }
             });
         });
